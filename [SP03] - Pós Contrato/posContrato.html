@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/posContrato.css" />
+    <link rel="shortcut icon" href="img/bank.png" type="image/x-icon">
+    <title>ProwayBank - Crédito</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a onclick="message()">
+          <img src="img/icon-voltar.svg" alt="icone de voltar" />
+        </a>
+        <a onclick="titleClick()">
+          <h1>Crédito</h1>
+        </a>
+      </nav>
+    </header>
+    <main>
+
+      <section class="saldo-box">
+        <h2>Saldo devedor</h2>
+        <div class="saldo">
+          <p id='container'>R$ 25.000,00 </p>  
+          <span id="action" class="btn btn-light"><img id="teste" value="olho" src="img/eye-regular.svg" alt="icone de visibilidade"></span>         
+        </div>
+      </section>
+
+        <article>
+
+          <div id="curve_chart"  class="grafico justify-content-md-end"></div>
+  
+          <form class="mb-3" >
+            <label for="formGroupExampleInput" class="form-label">Valor do empréstimo</label>
+            <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Valor emprestimo" name="emprestimo"  min="1" />
+
+            <label  for="formGroupExampleInput" class="form-label">Número de parcelas restantes</label>
+            <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Número de parcelas" name="parcelas" />
+
+            <label for="formGroupExampleInput" class="form-label">Valor da parcela</label>
+            <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Valor parcela" />
+
+            <label for="formGroupExampleInput" class="form-label">Vencimento da 1º parcela</label>
+            <input type="date" class="form-control" id="formGroupExampleInput" />
+
+            <label for="formGroupExampleInput" class="form-label">Vencimento da última parcela</label>
+            <input type="date" class="form-control" id="formGroupExampleInput" />
+
+              <button type="button" class="btn btn-warning d-flex" onclick="buttonRenegocie(event)" id="submit-button" >Renegociar <img src="img/hard-shake.svg" alt="icone de aperto de mão"/></button>       
+          </form>            
+        </article>
+    </main>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/posContrato.js"></script>
+  </body>
+</html>

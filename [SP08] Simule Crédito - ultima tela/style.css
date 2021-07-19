@@ -1,0 +1,148 @@
+/* CONFIGURAÇÕES DA PAGINA */
+:root{
+    --cor-principal: #FFB800;
+    --cor-secundaria: #efefef;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: var(--cor-secundaria);
+}
+
+body{
+    font-family: OpenSans;
+}
+
+/* CABEÇALHO */
+.icon-voltar{
+    display: none;
+}
+
+.cabecalho{
+    height: 200px;
+    background-color: var(--cor-principal);     
+   
+    padding-top: 10px;
+
+    color: #fff;
+}
+
+.navegacao{
+    display: flex;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.navegacao a, h3{
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao a:first-child {
+    margin-left: 1rem;
+    justify-content: left;
+    align-content: center;
+    align-self: center;
+  }
+
+.navegacao img{
+    height: 30px;
+}
+
+/* CONTEUDO PRINCIPAL */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 85vh;
+    background-color: var(--cor-secundaria);
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+
+    margin-top: -90px;
+
+}
+
+.info-usuario{
+    min-width: 250px;
+    
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+
+    
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: -30px;
+
+    padding: 20px;
+}
+
+.info-usuario img{
+    border-radius: 100px;
+}
+
+.info-usuario .texto-usuario p{
+    font-size: small;
+}
+
+.info-usuario .texto-usuario h3{
+    margin-top: 15px;
+}
+
+.resposta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    height: 100%;
+    justify-content: space-around;
+}
+
+.resposta article{
+    display: flex;
+
+    align-items: center;
+}
+
+.resposta article img{
+    margin-right: 10px;
+}
+
+.botao{
+    border: 0;
+    padding: 2vw;
+    margin: 1rem;
+    background: var(--cor-principal);
+    border-radius: 50px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: #ffc42d;
+}
+
+
+@media (max-width: 700px) {
+    .icon-voltar{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+}

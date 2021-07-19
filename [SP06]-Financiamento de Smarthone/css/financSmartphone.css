@@ -1,0 +1,144 @@
+h1{
+  text-align: center;
+  color: aliceblue;
+}
+section{
+ justify-content: center;
+}
+
+nav{
+ color: white;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+}
+nav a {
+ display: flex;
+ justify-content: center;
+}
+nav a:first-child {
+ margin-left: 1rem;
+ justify-content: left;
+ align-content: center;
+ align-self: center;
+}
+nav a img {
+ height: 1rem;
+ width: 1rem;
+}
+
+nav {
+ color: white;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+}
+nav a {
+ display: flex;
+ justify-content: center;
+}
+nav a:first-child {
+ margin-left: 1rem;
+ justify-content: left;
+ align-content: center;
+ align-self: center;
+}
+nav a img {
+ height: 1rem;
+ width: 1rem;
+ justify-content: space-between;
+ align-items: flex-end;
+} 
+
+body {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #FFB800; 
+  overflow: hidden; 
+}
+
+header{ 
+  display: grid;
+  grid-template-columns: 1fr 11fr 1fr;
+  align-items: center;
+}
+
+header h1 {
+  overflow-wrap: normal;
+  text-align: center;
+  font-size: 18px;
+  color:white;
+}
+
+header a {
+  margin-left: 0.3rem;
+}
+
+header {
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header h1{
+  font-size:20px;
+  color:white;
+} 
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 4rem  4rem 0rem 0rem;
+  background-color: white;
+  height: 100vh;
+}
+
+main h2{
+  
+  margin: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight:bold;
+}
+
+main p{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  line-height: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight:normal;  
+}
+
+main h2 {
+  text-align: center;
+}
+
+.voltar{
+  margin: 2% 90% 0% 0%
+}
+
+.foto{
+  display: flex;
+  justify-content: center;
+  background-color:white;
+}
+
+
+.foto img{
+  height: 150px;
+  width:150px;
+
+}
+
+.form-select{
+  width: 20%;
+  margin: 2% 0% 1% 40%;
+}
+
+.btn-warning{
+  width: 20%;
+  margin: 2% 0% 0% 40%
+}
+

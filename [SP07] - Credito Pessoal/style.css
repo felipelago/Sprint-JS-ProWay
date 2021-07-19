@@ -1,0 +1,71 @@
+/* CONFIGURAÇÕES DA PAGINA */
+:root{
+    --cor-principal: #FFB800;
+    --cor-secundaria: #efefef;
+}
+
+html{
+    background-color: var(--cor-secundaria);
+}
+
+/* CABEÇALHO */
+.cabecalho{
+    height: 200px;
+    background-color: var(--cor-principal);
+}
+
+.navegacao{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.navegacao img{
+    height: 30px;
+}
+
+/* CONTEUDO PRINCIPAL */
+.principal{
+    height: 85vh;
+    background-color: var(--cor-secundaria);
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+
+    margin-top: -90px;
+}
+
+.info-credito{
+    min-width: 250px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 20px;
+
+    margin-top: -30px;
+
+    font-weight: bold;
+}
+
+.formulario{
+    height: 60vh;
+}
+
+.inputs{
+    width: 50vw;
+}
+
+.formulario input{
+    height: 35px;
+    border-radius: 10px;
+}
+
+.formulario input:focus{
+    outline: none;
+}
+
+.botao{
+    background: var(--cor-principal);
+}
+
+.botao:hover{
+    background-color: #ffc42d;
+}

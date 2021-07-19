@@ -1,0 +1,64 @@
+.cabecalho{
+    background-color: #FFB800;
+    padding: 0.5rem 0 10rem 0;
+}
+#body{
+    background-color: #EDEDED;
+    border-radius: 50px 50px 0px 0px;
+}   
+
+main p {
+    color: #000000;
+    font-size: 12pt;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+.form-label {
+    font-size: 12pt;
+}
+
+.radio-options{
+    display: flex;
+    justify-content: space-around;
+}
+
+#botaoSubmit {
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEDED;
+    border-radius: 50px;
+    position: relative;
+    top: -5rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 250vh;
+}
+
+main section {
+    color: #000000;
+    font-size: 12pt;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    color: #000000;
+    font-size: 16pt;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}

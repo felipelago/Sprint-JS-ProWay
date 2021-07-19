@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/bank.png" type="image/x-icon">
+        <title>Crédito Pessoal</title>
+    </head>
+    <body>
+        <header class="cabecalho text-white pt-3">
+            <nav class="navegacao">
+                <a class="d-flex align-self-center justify-content-start ms-3" href="">
+                    <img src="img/arrow-back.svg" alt=""  height="25" class="d-block d-md-none">
+                    <img src="img/Logo.svg" alt="" class="d-none d-md-block" height="25">
+                </a>
+                <h3 class="d-flex justify-content-center">Crédito Pessoal</h3>           
+            </nav>
+        </header>
+
+        <main class="principal d-flex flex-column align-items-center">
+            <section class="info-credito d-flex flex-column align-items-center justify-content-center">
+                <p class="my-0">Credito disponivel</p>
+                <p class="d-flex align-items-center fs-3 my-0"> R$ 75.000,00  <img src="img/EyeSlash.svg" class="ms-2" alt=""> </p>
+            </section>
+
+            <section class="formulario mt-4">
+                <form action="#" class="d-flex flex-column justify-content-between">
+                    <section class="inputs fw-bold">                   
+                        <div class="d-flex flex-column mt-4">
+                            <label class="mb-1">Qual o valor que deseja?</label>
+                            <input class="ps-3 border-0" type="text" name="valor-emp" placeholder="R$ 25.000,00" required>
+                        </div>
+        
+                        <div class="d-flex flex-column mt-4">
+                            <label class="mb-1">Quantidade de parcelas que deseja? </label>
+                            <input class="ps-3 border-0" type="number" name="qtd-parcelas" placeholder="10" min="0" required>
+                        </div>
+        
+                        <p class="mt-5 mb-3">Valor das parcelas: <span> 2.000,00 </span></p>
+                    </section>
+                    
+                    <button class="botao rounded-pill btn btn-lg border-0 my-3 mx-3 py-3 text-white fw-bold" type="submit">Realizar pedido</button>
+                </form>
+            </section>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="../[SP04] - Crédito Imobiliário/styleimobiliario2.css"/>
+    <title>Financiamento de Veículos</title>
+  </head>
+ <body id="body">
+	<header class="cabecalho">
+      <nav>
+		  <a href="../[SP02] - Menu/Menu.html">
+			<img src="icon-voltar.svg" alt="icone de voltar" />
+		  </a>
+          <h1>Financiamento de Veículos</h1>
+      </nav>
+    </header>
+	<main class="container">
+			<section class="content-box">
+
+					<h2>Qual o tipo de veículo que você deseja?</h2>
+					
+					<section class="radio-options">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" id="carro" name="tipoDeImovel" value="carro">
+							<label class="form-check-label" for="flexRadioDefault1">Carro</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="radio" id="moto" name="tipoDeImovel" value="moto">
+							<label class="form-check-label" for="flexRadioDefault1">Moto</label>
+						</div>
+					</section>
+				
+
+					<section>
+						<label  for="formGroupExampleInput" class="form-label">Ano do veículo</label>
+						<input  id="valor" class="form-control" type="text"  placeholder="Digite o ano do veículo aqui">
+					</section>	
+
+					<section>
+						<label  for="formGroupExampleInput" class="form-label">Qual o valor do veículo desejado?</label>
+						<input  id="valor" class="form-control" type="text" placeholder="R$">
+					</section>
+
+					<section>
+						<label  for="formGroupExampleInput" class="form-label">Marca do veículo</label>
+						<input  id="marca" class = "form-control" placeholder="BMW, Ford, Chevrolet, Honda">
+					</section>
+
+					<p>Novo ou usado?</p>
+					
+					<section class="radio-options">
+						<input class="form-check-input" type="radio" id="novo" name="tipoDeImovel" value="novo">
+                        <label class="form-check-label" for="flexRadioDefault1">Novo</label>
+
+						<input class="form-check-input" type="radio" id="usado" name="tipoDeImovel" value="usado">
+                        <label class="form-check-label" for="flexRadioDefault1">Usado</label>
+					</section>
+				
+
+					<div id="botaoSubmit">
+						<a href="#" class="btn btn-warning" type="submit" value= "realizarpedido" id="botaopedido" onclick="RealizarPedido()">Realizar Pedido</a>
+					</div>
+			</section>
+	</main>
+ </body>
+</html>
