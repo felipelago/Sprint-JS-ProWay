@@ -37,6 +37,7 @@ nav a:first-child {
 body {
 	background-color: #ffb800;
 	margin: 0;
+	width: 100%;
 }
 .content-box {
 	display: flex;
@@ -44,7 +45,6 @@ body {
 	align-items: center;
 	background-color: #ededed;
 	border-radius: 3rem 3rem 0 0;
-
 }
 .conteudo {
 	background-color: white;
